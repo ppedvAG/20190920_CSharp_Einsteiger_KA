@@ -22,43 +22,100 @@ namespace HalloWelt
             #endregion
 
             #region Konvertierung
-            Console.WriteLine("Zahl eingeben: ");
-            string eingabe = Console.ReadLine();
+            //Console.WriteLine("Zahl eingeben: ");
+            //string eingabe = Console.ReadLine();
 
-            int parsed;
-            bool parse = int.TryParse(eingabe, out parsed);
+            //int parsed;
+            //bool parse = int.TryParse(eingabe, out parsed);
 
-            if (parse)
+            //if (parse)
+            //{
+            //    Console.WriteLine($"Zahl wurde eingegeben: {parsed}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Keine Zahl! ... Wert: {parsed}");
+            //}
+            ////Convert.ToDouble();
+            ////double.TryParse();
+            ////double.Parse();
+            //int a = 0;
+            //Console.WriteLine(++a);
+
+            //Console.WriteLine(a++);
+            //Console.WriteLine(a++);
+
+            //a++;
+            //Console.WriteLine($"{a}");
+
+            //double b = 4;
+
+            //// a = b;
+            //a = (int)b;
+            //a = Convert.ToInt32(b);
+            #endregion
+
+            #region  ZahlenRateSpiel
+            //Random generator = new Random();
+            //int zufallszahl = generator.Next(1, 5);
+            //Console.Write("Zahl eingeben: ");
+            //int eingabe2 = int.Parse(Console.ReadLine());
+
+            //if (eingabe2 < zufallszahl)
+            //{
+            //    Console.Write("Eingabe ist kleiner als Zufallszahl ({0}).", zufallszahl);
+            //}
+            //else if (eingabe2 > zufallszahl)
+            //{
+            //    Console.Write("Eingabe ist größer als Zufallszahl ({0}).", zufallszahl);
+            //}
+            //else
+            //{
+            //    Console.Write("Eingabe ist gleich der Zufallszahl ({0}).", zufallszahl);
+            //}
+            //Console.ReadLine();
+            #endregion
+
+            #region Arrays
+
+            int zahlFünf = 5;
+            int[] prüfArray = new int[] { 3, 4, 5 };
+            Console.WriteLine($"Minus-Ausgabe: {prüfArray.First()}");
+
+            object geklontesArray = prüfArray.Clone();
+
+            Console.WriteLine("Geklontes Array: " + geklontesArray);
+
+            int[] zahlenArray = new int[] { 2, 3, 4 }; // Array-Initializer = direkte Zuweisung von Werten bei der Instanziierung des Arrays
+
+            // Mehrere Werte aus einem weiteren Array überprüfen
+            foreach(int zahl in prüfArray)
             {
-                Console.WriteLine($"Zahl wurde eingegeben: {parsed}");
+                if(zahlenArray.Contains(zahl))
+                {
+
+                }
             }
-            else
+
+            // Enthält das Array einen Wert?
+            if (zahlenArray.Contains(zahlFünf))
             {
-                Console.WriteLine($"Keine Zahl! ... Wert: {parsed}");
+
             }
-            //Convert.ToDouble();
-            //double.TryParse();
-            //double.Parse();
-            int a = 0;
-            Console.WriteLine(++a);
 
-            Console.WriteLine(a++);
-            Console.WriteLine(a++);
+            string[] bezeichner = new string[] { "Hallo", "Welt" };
 
-            a++;
-            Console.WriteLine($"{a}");
+            int[,] multiDim = new int[2, 2]; // Multidimensionales Array
 
-            double b = 4;
+            // Zuweisung, "1". Dimension, "1". Index
+            multiDim[0,0] = 1;
 
-            // a = b;
-            a = (int)b;
-            a = Convert.ToInt32(b);
+            Console.WriteLine($"Item at the first index in first dimension {multiDim[0, 0]}");
 
-
-
-
+            Console.WriteLine($"Array-Length is: {bezeichner.Length}");
 
             #endregion
+
 
             Console.WriteLine("--- ENDE PROGRAMM ---");
             Console.ReadLine();
