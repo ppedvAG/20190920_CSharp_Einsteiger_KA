@@ -89,9 +89,9 @@ namespace HalloWelt
             int[] zahlenArray = new int[] { 2, 3, 4 }; // Array-Initializer = direkte Zuweisung von Werten bei der Instanziierung des Arrays
 
             // Mehrere Werte aus einem weiteren Array überprüfen
-            foreach(int zahl in prüfArray)
+            foreach (int zahl in prüfArray)
             {
-                if(zahlenArray.Contains(zahl))
+                if (zahlenArray.Contains(zahl))
                 {
 
                 }
@@ -108,13 +108,36 @@ namespace HalloWelt
             int[,] multiDim = new int[2, 2]; // Multidimensionales Array
 
             // Zuweisung, "1". Dimension, "1". Index
-            multiDim[0,0] = 1;
+            multiDim[0, 0] = 1;
 
             Console.WriteLine($"Item at the first index in first dimension {multiDim[0, 0]}");
 
             Console.WriteLine($"Array-Length is: {bezeichner.Length}");
 
             #endregion
+
+            Random generator = new Random();
+
+            int[] randomArray = new int[3];
+
+            for (int i = 0; i < randomArray.Length; i++)
+            {
+                int currentZahl = generator.Next(1, 5);
+
+                if(!randomArray.Contains(currentZahl))
+                {
+                    randomArray[i] = currentZahl;
+                }
+            }
+
+            //int[] randomArray = new int[]
+            //{
+            //    generator.Next(1, 5),
+            //    generator.Next(1, 5),
+            //    generator.Next(1, 5)
+            //};
+
+
 
 
             Console.WriteLine("--- ENDE PROGRAMM ---");
