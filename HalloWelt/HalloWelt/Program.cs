@@ -116,30 +116,6 @@ namespace HalloWelt
 
             #endregion
 
-            Random generator = new Random();
-
-            int[] randomArray = new int[3];
-
-            for (int i = 0; i < randomArray.Length; i++)
-            {
-                int currentZahl = generator.Next(1, 5);
-
-                if(!randomArray.Contains(currentZahl))
-                {
-                    randomArray[i] = currentZahl;
-                }
-            }
-
-            //int[] randomArray = new int[]
-            //{
-            //    generator.Next(1, 5),
-            //    generator.Next(1, 5),
-            //    generator.Next(1, 5)
-            //};
-
-
-
-
             Console.WriteLine("--- ENDE PROGRAMM ---");
             Console.ReadLine();
         }
