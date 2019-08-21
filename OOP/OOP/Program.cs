@@ -25,12 +25,14 @@ namespace OOP
             ////Console.WriteLine($"Alter: {person1.Alter}");
             ////IrgendeineFunktion();
 
-            Account k1 = new Account("Max Mustermann", 5000);
-            k1.Describe();
-            k1.Deposit(500);
-            k1.Describe();
-            k1.Withdraw(1000);
-            k1.Describe();
+            //Account k1 = new Account("Max Mustermann", 5000);
+            //k1.Describe();
+            //k1.Deposit(500);
+            //k1.Describe();
+            //k1.Withdraw(1000);
+            //k1.Describe();
+
+            
 
             Console.ReadLine();
         }

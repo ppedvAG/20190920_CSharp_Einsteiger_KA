@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    class Account
+    public abstract class Account
     {
 
         #region Felder
