@@ -10,37 +10,27 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            //// Instanziierung des Objektes anhand des Blueprints "Person"
-            //Person person1 = new Person(); // Aufruf des Konstruktors mit "= new ..."
-            //Person person2 = new Person(30, "Mustermann");
+            // Instanziierung Jugend-Konto 
+            //Youth jugendKonto = new Youth("Max Mustermann");
+            Giro giroKonto = new Giro("Hans Wurst");
 
-            //person1.Alter = 20; // Setzen einer Eigenschaft
+            //Console.Write("Initial Deposit?: ");
+            //decimal uInputDeposit = Convert.ToDecimal(Console.ReadLine());
+            //jugendKonto.Deposit(uInputDeposit);
 
-            //Console.WriteLine($"Datentyp von p1: {person1.GetType()}");
-            //Console.WriteLine($"Name Person1: {person1.Name}");
-            //Console.WriteLine($"Name Person2: {person2.Name}");
+            Console.Write("Initial Deposit?: ");
+            decimal uInputDepositGiro = Convert.ToDecimal(Console.ReadLine());
+            giroKonto.Deposit(uInputDepositGiro);
 
-            //Console.WriteLine($"Summe: {Calculator.Add(5, 5, 5, 5, 5, 5)}");
+            //Console.Write("Withdraw amount?: ");
+            //decimal uInputWithdraw = Convert.ToDecimal(Console.ReadLine());
+            //jugendKonto.Withdraw(uInputWithdraw);
 
-            ////Console.WriteLine($"Alter: {person1.Alter}");
-            ////IrgendeineFunktion();
-
-            //Account k1 = new Account("Max Mustermann", 5000);
-            //k1.Describe();
-            //k1.Deposit(500);
-            //k1.Describe();
-            //k1.Withdraw(1000);
-            //k1.Describe();
-
-            
+            Console.Write("Withdraw amount?: ");
+            decimal uInputWithdrawGiro = Convert.ToDecimal(Console.ReadLine());
+            giroKonto.Withdraw(uInputWithdrawGiro);
 
             Console.ReadLine();
-        }
-
-        static void IrgendeineFunktion()
-        {
-            int x = 10;
-            Console.WriteLine($"Wert: {x}");
         }
     }
 }

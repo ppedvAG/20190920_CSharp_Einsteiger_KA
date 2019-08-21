@@ -8,6 +8,10 @@ namespace OOP
 {
     public class Giro : Account
     {
+        public Giro(string Owner) : base(Owner)
+        {
+
+        }
         public Giro(string Owner, decimal Balance) : base(Owner, Balance)
         {
 

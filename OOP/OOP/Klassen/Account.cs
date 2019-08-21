@@ -15,7 +15,7 @@ namespace OOP
         #endregion Felder
 
         #region Eigenschaften
-        public string Owner {
+        public virtual string Owner {
             get {
                 return owner;
             }
@@ -23,21 +23,30 @@ namespace OOP
                 owner = value;
             }
         }
-        public decimal Balance {
+        public virtual decimal Balance {
             get {
                 return balance;
             }
-            private set {
+            protected set {
                 balance = value;
             }
         }
         #endregion Eigenschaften
 
         #region Konstruktor
+        public Account(string Owner)
+        {
+            owner = Owner;
+            Console.WriteLine($"Constructor of Account called ...");
+            Console.WriteLine($"Account-Owner: {owner}");
+        }
         public Account(string Owner, decimal Balance)
         {
             owner = Owner;
             balance = Balance;
+            Console.WriteLine($"Constructor of Account called ...");
+            Console.WriteLine($"Account-Owner: {owner}");
+            Console.WriteLine($"Account-Balance:{balance}");
         }
         #endregion Konstruktor
 
@@ -48,7 +57,7 @@ namespace OOP
             System.Console.WriteLine($"Amount of {amount} deposit. New balance {balance}.");
         }
 
-        public void Withdraw(decimal amount)
+        public virtual void Withdraw(decimal amount)
         {
             balance -= amount;
             System.Console.WriteLine($"Amount of {amount} withdraw. New balance {balance}.");
