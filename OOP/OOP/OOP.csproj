@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Klassen\Calculator.cs" />
+    <Compile Include="Klassen\Account.cs" />
     <Compile Include="Klassen\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
