@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace OOP
 {
@@ -39,6 +40,7 @@ namespace OOP
             owner = Owner;
             Console.WriteLine($"Constructor of Account called ...");
             Console.WriteLine($"Account-Owner: {owner}");
+            MessageBox.Show($"Konto erstellt für {owner}");
         }
         public Account(string Owner, decimal Balance)
         {

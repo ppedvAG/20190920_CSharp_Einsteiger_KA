@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E96319B3-7CD7-41F8-AC2E-7D5F48AB3240}</ProjectGuid>
+    <ProjectGuid>{C8B83DDB-B385-4267-9741-836E341D600D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOP</RootNamespace>
-    <AssemblyName>OOP</AssemblyName>
+    <RootNamespace>Schnittstellen</RootNamespace>
+    <AssemblyName>Schnittstellen</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Klassen\Calculator.cs" />
-    <Compile Include="Klassen\Account.cs" />
-    <Compile Include="Klassen\Giro.cs" />
-    <Compile Include="Klassen\Person.cs" />
-    <Compile Include="Klassen\Youth.cs" />
+    <Compile Include="Paint\Dreieck.cs" />
+    <Compile Include="Paint\Form.cs" />
+    <Compile Include="Paint\Kreis.cs" />
+    <Compile Include="Paint\Rechteck.cs" />
+    <Compile Include="Paint\Schnittstellen\IZeichenbar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    class Youth : Account
+    public class Youth : Account
     {
         public Youth(string Owner) : base(Owner)
         {
