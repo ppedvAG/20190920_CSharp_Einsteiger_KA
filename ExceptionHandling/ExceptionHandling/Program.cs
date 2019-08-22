@@ -35,10 +35,10 @@ namespace ExceptionHandling
                 // Werfen des Fehlers
                 throw new CustomException("Fehlermeldung");
             // Auffangen
-            } catch (CustomException ex)
+            } catch
             {
                 // Behandlung
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);                
             }
 
             
