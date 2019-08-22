@@ -60,16 +60,16 @@ namespace Generics
             //IEnumerable<Person> result = personenListe.Where(s => s.Nachname == "Herb" );
 
             // Action (Funktion), Parameter-Datentyp (IEnumerable<Person>), Action-Name (stringResult), Parameter (personen)
-            Action<IEnumerable<Person>> stringResult = personen =>
+            Action<IEnumerable<Person>> findeVornamen = personen =>
             {
                 // Auswählen des gewünschten Wertes -> Vorname
                 IEnumerable<string> vornamen = personen.Select(p => p.Vorname);
                 foreach (string vorname in vornamen) { Console.WriteLine(vorname); }
             };
 
-            stringResult(personenListe.Where(s => s.Nachname == "Herb"));
+            findeVornamen(personenListe.Where(s => s.Nachname == "Herb"));
 
-            stringResult(personenListe.Where(s => s.Nachname == "Will"));
+            findeVornamen(personenListe.Where(s => s.Nachname == "Will"));
 
 
             //foreach (Person person in result)
