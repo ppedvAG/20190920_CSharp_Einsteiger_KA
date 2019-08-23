@@ -5,11 +5,15 @@ https://docs.microsoft.com/de-de/dotnet/api/system.string.format?view=netframewo
 https://docs.microsoft.com/de-de/dotnet/api
 https://referencesource.microsoft.com/
 
-https://github.com/dotnet/ILMerge
-
-Ressourcen Einbetten:
-https://stackoverflow.com/questions/11185904/embed-text-file-in-resources
-
 # Dataframe
 https://docs.microsoft.com/de-de/dotnet/api/system.data.datatable?view=netframework-4.8
 https://docs.microsoft.com/de-de/dotnet/api/system.data.dataset?view=netframework-4.8
+
+# Datenbank-Verbindung
+https://docs.microsoft.com/de-de/dotnet/framework/winforms/controls/how-to-bind-data-to-the-windows-forms-datagridview-control
+
+CSV Export/Import
+NuGet-Package-Console -> find-package CSV -> install-package CsvHelper
+https://joshclose.github.io/CsvHelper/
+https://joshclose.github.io/CsvHelper/examples/data-table/
+
